@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <mainfolder title="Invoices(Client)">
+        <subfolder title="Authorities"></subfolder>
+        <subfolder title="Other Invoices"></subfolder>
+  
+    </mainfolder>
+ 
+    <mainfolder title="Billings(Anex)">
+        <subfolder title="Anex"></subfolder>
+    </mainfolder>
+    <mainfolder title="Correspondence">
+        <subfolder title="Clients"></subfolder>
+        <subfolder title="Others"></subfolder>
+    </mainfolder>
+    <mainfolder title="FSC"></mainfolder>
+    <mainfolder title="Registrar"></mainfolder>
+    <mainfolder title="Statutory">
+        <subfolder title="Registers"></subfolder>
+        <subfolder title="Share Certificates"></subfolder>
+        <subfolder title="Others"></subfolder>
+    </mainfolder>
+    <mainfolder title="Minutes and resolution">
+ 
+        <subfolder title="Directors"></subfolder>
+        <subfolder title="Shareholders"></subfolder>
+  
+    </mainfolder>
+    <mainfolder title="Bank">
+  
+        <subfolder title="Team">
+            <subsubfolder title="Transfer Instructions"></subsubfolder>
+            <subsubfolder title="Bank Statements and Advices"></subsubfolder>
+        </subfolder>
+  
+  
+    </mainfolder>
+    <mainfolder title="Investment-Trading">
+        <subfolder title="Investment-Trading Agreements"></subfolder>
+        <subfolder title="Workings"></subfolder>
+    </mainfolder>
+    <mainfolder title="Accounting and Tax">
+    
+  
+        <subfolder title="Accounting-Workings"></subfolder>
+        <subfolder title="Financial Statements"></subfolder>
+        <subfolder title="Management Accounts"></subfolder>
+        <subfolder title="TAX"></subfolder>
+    </mainfolder>
+    
+    <mainfolder title="Compliance"></mainfolder>
+    <mainfolder title="Investors">
+        <subfolder title="CDD or KYC"></subfolder>
+        <subfolder title="Investors Agreements"></subfolder>
+        <subfolder title="World Check Reports"></subfolder>
+    </mainfolder>
+    <mainfolder title="Promoters or Beneficial Owners">
+        <subfolder title="CDD or KYC"></subfolder>
+        <subfolder title="World Check Reports"></subfolder>
+    </mainfolder>
+    <mainfolder title="Legal">
+        <subfolder title="POA-Notary-Apostille"></subfolder>
+        <subfolder title="Legal Certificate or Legal Opinion"></subfolder>
+        <subfolder title="Agreements with Anex"></subfolder>
+    </mainfolder>
+    <mainfolder title="Occupation Permits"></mainfolder>
+    <mainfolder title="Certificates-Corporate Documents">
+        <subfolder title="Certificates and Licences"></subfolder>
+        <subfolder title="TRC"></subfolder>
+        <subfolder title="Other"></subfolder>
+    </mainfolder>
+    <mainfolder title="IP 2014"></mainfolder>
+</root>  

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <mainfolder title="Invoice"></mainfolder>
+ 
+    <mainfolder title="Registrar"></mainfolder>
+    <mainfolder title="Minutes">
+        <subfolder title="Board"></subfolder>
+        <subfolder title="Shareholders"></subfolder>
+        <subfolder title="Audit committee"></subfolder>
+        <subfolder title="Remuneration committee"></subfolder>
+        <subfolder title="Conduct review committee"></subfolder>
+        <subfolder title="Risk assessment committee"></subfolder>
+        <subfolder title="Corporate governance committee"></subfolder>
+        <subfolder title="Strategic planning committee"></subfolder>
+    </mainfolder>
+    <mainfolder title="Resolutions">
+        <subfolder title="Board"></subfolder>
+        <subfolder title="Shareholders"></subfolder>
+    </mainfolder>
+    <mainfolder title="Authorities">
+ 
+        <subfolder title="MRA"></subfolder>
+        <subfolder title="FSC"></subfolder>
+        <subfolder title="Others"></subfolder>
+  
+    </mainfolder>
+    <mainfolder title="Corporate docs">
+      
+    </mainfolder>
+    <mainfolder title="Banks">
+ 
+  
+    </mainfolder>
+    <mainfolder title="Register">
+  
+        <subfolder title="Director"></subfolder>
+        <subfolder title="Shareholder"></subfolder>
+        <subfolder title="Interest"></subfolder>
+        <subfolder title="Share transfer forms"></subfolder>
+        <subfolder title="Share certificates"></subfolder>
+    </mainfolder>
+    <mainfolder title="Agreements"></mainfolder>
+    <mainfolder title="Correspondences"></mainfolder>
+    <mainfolder title="Promoters">
+  
+        <subfolder title="KYC"></subfolder>
+  
+    </mainfolder>
+    <mainfolder title="Accounting">
+        <subfolder title="Audited Accounts"></subfolder>
+        <subfolder title="Management Accounts"></subfolder>
+        <subfolder title="VAT"></subfolder>
+        <subfolder title="Fixed Asset Register"></subfolder>
+        <subfolder title="Authorities"></subfolder>
+        <subfolder title="Others"></subfolder>
+    </mainfolder>
+    
+</root>  

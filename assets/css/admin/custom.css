@@ -1,0 +1,285 @@
+/***************Css for Client*****************/
+
+.thead-th-padg{
+    padding: 0px !important;
+    padding-left: 10px !important;
+    font-weight: normal;
+    height: 30px;
+    vertical-align: middle !important;
+}
+.clientfilter input{
+    height: 25px;
+}
+.clientfilter label{
+    padding: 2px !important;
+}
+.clientfilter{
+    height: 34px;
+}
+.td-text-area{
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #000;
+}
+.td-btn-marg-right{
+    margin-right: 10px;
+    font-size: 10px;
+}
+.padding-left_0{
+    padding-left:0px !important;
+}
+
+.blue {
+	color: rgb(0, 110, 234);
+}
+
+.pagination {
+	padding-right: 4px;
+}
+/***************End of css for Client*****************/
+/***************Css for client detailes***************/
+.thead-th-tr-textarea{
+    font-size: 13px;
+    font-weight: normal;
+    padding: 0px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    width: 142px !important;
+}
+.tbody-tr-td-area{
+    width: 142px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 3px !important;
+    padding-bottom: 0px !important;
+}
+.td-area-form-marg{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+}
+.height_25{
+    height: 32px;
+}
+.padding_3{
+    padding: 3px !important;
+}
+.td-icon{
+    width:20px !important;
+    height:20px !important;
+    padding:0px !important; 
+}
+.td-icon_font-size{
+    font-size: 10px !important;
+    vertical-align: middle !important;
+    margin-top: -8px !important;    
+}
+.client-detailes-sub_heading{
+    font-size: 12px;
+    font-weight: normal;
+}
+.plahole_font{
+    font-size: 12px !important;
+}
+.inputtext_formating{
+    font-size: 12px !important;;
+    font-weight: normal !important;
+}
+.inputtext_heading{
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 5px;
+    background: #eaeaea;
+    color: #c72a25;
+}
+.radio-text_formatting{
+    font-size: 12px;
+    margin-top: 2px;
+}
+/***************End of css for client details*******/
+
+/***************Role Management css*****************/
+.roll-mangt_sub-heading{
+    border-style: none !important;
+    background-color: #e1e0df;
+    padding: 5px !important;
+}
+.roll-mangt-th{
+    padding: 5px !important;
+    font-size: 12px !important;
+    font-weight: normal;
+    text-align: center;
+    width: 200px !important;
+    
+}
+.roll-mangt-tbody-td{
+    padding: 5px !important;
+    padding-left: 10px !important;
+}
+/***************End of role management css*****************/
+/***************Leave management Css*****************/
+.font-size_12{
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+.tdtopbg .clientfilter{
+    display: none !important;
+}
+.paging_bootstrap{
+   /* float: right !important; */
+}
+/***************End of Leave management css*****************/
+.ellipsis_text{
+    width: 155px !important;
+  float: left !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.pdftd {
+    background-color: white;
+}
+.pdfspan span {
+    text-align: right;
+}
+
+.pdf_table_border td {
+    border: solid 1px rgb(223, 223, 223);
+}
+
+.pdf-xls-loader{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -17px;
+    float: left;
+    display:none;
+}
+
+/****************START Css for Data base*************************/
+.icon-delete-symbol{
+    cursor: pointer;
+    color: red;
+    font-size: 12px;
+}
+/****************END Css for Data base*************************/
+
+.modal_box_custome_size{
+	width:60% !important;
+}
+.removed_icon_btn{
+    width: 12px !important;
+    color: #fff !important;
+    font-size: 10px !important;
+    height: 15px !important;
+    padding-top: 2px !important;
+    padding-left: 2px !important;
+}
+.corporate-data-sub-headding-tab{
+    background-color: #d64844;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+	width:100%;
+    float: left;
+	margin-bottom: 20px;
+
+}
+.modal-custom-button{
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    border-radius: 3px !important;
+}
+
+.modal-custom-button_left{
+    margin-right: 20px;
+}
+
+.modal-footer {
+    margin-top: 15px; 
+    padding: 19px 20px 20px; 
+    text-align: right; 
+    border-top: 1px solid whitesmoke !important; 
+    background-color: whitesmoke !important;
+}
+
+.padding-for-modal{
+    padding: 5px 10px !important;
+}
+
+.modal-min-height{
+    min-height: 200px !important;
+}
+
+.dt_width{
+    width: 100% !important;
+    min-width: 1000px !important;
+}
+
+.close-on-client {
+    background-image: url("../../img/remove-icon-small.png") !important;
+    background-repeat: no-repeat !important;
+    display: inline-block;
+    height: 9px;
+    margin-right: 0;
+    margin-top: 0;
+    outline: medium none;
+    text-indent: -10000px;
+    width: 9px;
+}
+button.close-on-client {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+}
+.close-on-client {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+}
+
+.custom_close {
+    background-image: url("../../img/remove-icon-small.png") !important;
+    background-repeat: no-repeat !important;
+    display: inline-block;
+    height: 9px;
+    margin-right: 0;
+    margin-top: 0;
+    outline: medium none;
+    text-indent: -10000px;
+    width: 9px;
+}
+button.custom_close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+}
+.custom_close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+}
+
+.readonly{
+    cursor: not-allowed;
+    background-color: #EEEEEE;
+}

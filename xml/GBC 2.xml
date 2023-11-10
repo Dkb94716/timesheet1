@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <mainfolder title="Accounting and Tax">
+        <subfolder title="Accounting"></subfolder>
+        <subfolder title="Tax"></subfolder>
+  
+    </mainfolder>
+ 
+    <mainfolder title="Banks"></mainfolder>
+    <mainfolder title="Certificates-Corporate Documents">
+        <subfolder title="Certificates and Licenses"></subfolder>
+        <subfolder title="MRA"></subfolder>
+        <subfolder title="Others"></subfolder>
+    </mainfolder>
+    <mainfolder title="Compliance Checklist"></mainfolder>
+    <mainfolder title="Correspondence">
+ 
+  <subfolder title="Clients"></subfolder>
+        <subfolder title="Others"></subfolder>
+  
+    </mainfolder>
+    <mainfolder title="FSC">
+        <subfolder title="Set up"></subfolder>
+        <subfolder title="Others"></subfolder>
+  </mainfolder>
+    <mainfolder title="Investment-Trading">
+ 
+  <subfolder title="Investments-Trading Agreements"></subfolder>
+        <subfolder title="Others"></subfolder>
+        <subfolder title="Workings"></subfolder>
+  
+    </mainfolder>
+    <mainfolder title="Investors-Sharholders">
+  
+        <subfolder title="CDD-KYC"></subfolder>
+        <subfolder title="Investors Agreements"></subfolder>
+        <subfolder title="World Check Reports"></subfolder>
+  
+  
+    </mainfolder>
+    <mainfolder title="Invoices">
+        <subfolder title="Anex"></subfolder>
+        <subfolder title="Others"></subfolder>
+  
+  
+  
+    </mainfolder>
+    <mainfolder title="IP-2014"></mainfolder>
+    <mainfolder title="Legal">
+  
+  <subfolder title="Agreement with Anex"></subfolder>
+        <subfolder title="Legal Certificate-Opinion"></subfolder>
+        <subfolder title="Miscellaneous Agreements and Contracts"></subfolder>
+        <subfolder title="POA-Notary-Apostille"></subfolder>
+  
+    </mainfolder>
+    <mainfolder title="Minutes and Resolutions">
+        <subfolder title="Directors">
+            <subsubfolder title="Minutes"></subsubfolder>
+            <subsubfolder title="Resolutions"></subsubfolder>
+        </subfolder>
+        
+        <subfolder title="Shareholders">
+            <subsubfolder title="Minutes"></subsubfolder>
+            <subsubfolder title="Resolutions"></subsubfolder>
+            
+        </subfolder>
+  
+  
+    </mainfolder>
+    <mainfolder title="Occupation Permits">
+        <subfolder title="Dependants"></subfolder>
+        <subfolder title="Invstors"></subfolder>
+        <subfolder title="Professional"></subfolder>
+        <subfolder title="Retired"></subfolder>
+        <subfolder title="Self-Employed"></subfolder>
+    </mainfolder>
+    <mainfolder title="Promoters">
+        <subfolder title="CDD-KYC"></subfolder>
+        <subfolder title="World Check Reports"></subfolder>
+    </mainfolder>
+    <mainfolder title="Registrar">
+    </mainfolder>
+    <mainfolder title="Statutory">
+        <subfolder title="Others"></subfolder>
+        <subfolder title="Registers">
+            <subsubfolder title="Directors"></subsubfolder>
+            <subsubfolder title="Shareholders"></subsubfolder>
+        </subfolder>
+        <subfolder title="Share Certificates"></subfolder>
+  
+  
+    </mainfolder>
+</root>  

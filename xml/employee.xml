@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <mainfolder title="Employee Sheet"></mainfolder>
+    <mainfolder title="Profile of Employee"></mainfolder>
+    <mainfolder title="Trainings"></mainfolder>
+    <mainfolder title="Employment Contract"></mainfolder>
+    <mainfolder title="Tax"></mainfolder>
+    <mainfolder title="Insurance and Other Benefits"></mainfolder>
+    <mainfolder title="Education"></mainfolder>
+    <mainfolder title="Performance Management"></mainfolder>
+</root>

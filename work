@@ -1,0 +1,679 @@
+/////////////////////////////////////////////
+Vallabh Kuriyal//////////////////////////////
+/////////////////////////////////////////////
+****************************
+14-06-2016
+****************************
+/var/www/newtimesheet/application/config/config.php
+
+from
+$config['base_url']	= 'http://'.$_SERVER['HTTP_HOST'].'';
+to
+$config['base_url']	= 'http://'.$_SERVER['HTTP_HOST'].'/newtimesheet';
+
+
+*************************************************************************
+15-06-2016
+*************************************************************************
+
+ALTER TABLE `timesheet`.`db_bank_info` 
+ADD COLUMN `account_no` VARCHAR(255) NULL AFTER `accountno_id`;
+
+http://localhost/newtimesheet/databaseinfo/get_item_detail_for_edit
+
+
+
+/var/www/newtimesheet/application/views/db/BankInfo/bank_edit_bar.php
+
+
+/var/www/newtimesheet/application/views/db/bank_accounts_tab.php
+
+
+
+
+
+
+
+
+# means for 192.168.2.10 server % means for anex server
+
+
+
+
+
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php 
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php 
+Modified: /var/www/newtimesheet/application/views/db/BankInfo/bank_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/bank_accounts_tab.php
+Modified: /var/www/newtimesheet/assets/js/common.js
+
+
+if($detail[0]['issue_date']=="" ||$detail[0]['issue_date']=="0000-00-00 00:00:00"){echo '';}else{echo date('d F Y', strtotime($detail[0]['issue_date']));}
+
+if($detail[0]['expiry_date']=="" ||$detail[0]['expiry_date']=="0000-00-00 00:00:00"){echo '';}else{echo date('d F Y', strtotime($detail[0]['expiry_date']));}
+
+if($detail[0]['signed_date']=="" ||$detail[0]['signed_date']=="0000-00-00 00:00:00"){echo '';}else{echo date('d F Y', strtotime($detail[0]['signed_date']));}
+
+if($detail[0]['termination_date']=="" ||$detail[0]['termination_date']=="0000-00-00 00:00:00"){echo '';}else{echo date('d F Y', strtotime($detail[0]['termination_date']));}
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/Agreement/agreement_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Agreement/agreement_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/BankInfo/bank_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_corporate_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Compliance/compliance_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_common_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_corporate_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/account_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/auditor_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/auditor_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/taxtrc_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/taxtrc_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/LicensePermit/license_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/LicensePermit/license_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/LicensePermit/permit_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/LicensePermit/permit_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_allotment_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_allotment_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Trust/trust_beneficiary_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Trust/trust_trustinfo_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/agreement_tab.php
+Modified: /var/www/newtimesheet/application/views/db/beneficial_tab.php
+Modified: /var/www/newtimesheet/application/views/db/director_tab.php
+Modified: /var/www/newtimesheet/application/views/db/finance_tax_tab.php
+Modified: /var/www/newtimesheet/application/views/db/licenses_tab.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Modified: /var/www/newtimesheet/application/views/db/trusts_tab.php
+Modified: /var/www/newtimesheet/application/views/kycdirectors_content-29-03-2016.php
+Modified: /var/www/newtimesheet/application/views/kycdirectors_content.php
+Modified: /var/www/newtimesheet/assets/js/db_ready.js
+Committed revision 332.
+Updating...
+Ready
+
+
+
+
+--------------
+16/06/2016
+----------------
+WORK PLACE:-
+
+1./home/ctlnx004/Documents/VALLABH-DEVELOPER/Timesheet/database/timesheet (10).sql
+new database upload on 192.168.2.10
+2. newtimesheetqa
+3. ALTER TABLE `newtimesheetqa`.`db_bank_info` 
+ADD COLUMN `account_no` VARCHAR(255) NULL AFTER `accountno_id`;
+
+Test
+user: bhavna.jaunky@anexconsultancy.com
+password: 123456
+
+/var/www/newtimesheetqa/application/config/database.php
+$db['default']['database'] = 'newtimesheetqa'; // newtimesheet to newtimesheetqa
+
+------------------------------------------------------------------
+
+
+Works on local
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/account_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/substance_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/taxtrc_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/bank_accounts_tab.php
+Modified: /var/www/newtimesheet/application/views/db/beneficial_tab.php
+Modified: /var/www/newtimesheet/application/views/db/compliance_tab.php
+Modified: /var/www/newtimesheet/application/views/db/finance_tax_tab.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Modified: /var/www/newtimesheet/application/views/db/trusts_tab.php
+
+Date 17062016
+
+
+http://192.168.2.10/newtimesheetqa/databaseinfo/update_accountno
+
+
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+
+
+
+
+Latest tax returns filed
+
+<div class="form-group td-area-form-marg" style="margin-bottom:10px !important;">
+                                <label class="client-detailes-sub_heading" style="width:100%;">Remark</label>
+                                <textarea name="remark" style="width:100%;resize:vertical;"></textarea>
+</div>
+
+
+LOCAL
+--------
+ALTER TABLE `timesheet`.`db_fta_auditors` 
+ADD COLUMN `remark` MEDIUMTEXT NULL AFTER `appointment_date`;
+
+192.168.2.10
+-----------------
+
+
+
+ALTER TABLE `newtimesheetqa`.`db_fta_auditors` 
+ADD COLUMN `remark` MEDIUMTEXT NULL AFTER `appointment_date`;
+
+
+var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/auditor_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/finance_tax_tab.php
+
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/taxtrc_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/taxtrc_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/finance_tax_tab.php
+
+Change the header name as "Last tax return filed"
+
+
+replacement text from
+"Latest tax returns filed"
+To 
+"Last tax return filed"; 
+
+
+-------
+Director
+--------
+
+ALTER TABLE `timesheet`.`db_director_individual_common` 
+ADD COLUMN `director_surname` VARCHAR(100) NULL AFTER `director_name`;
+
+ALTER TABLE `timesheet`.`db_director_individual` 
+ADD COLUMN `director_surname` VARCHAR(45) NULL AFTER `director_name`;
+
+
+ <div class="form-group td-area-form-marg" style="margin-bottom:10px !important;">
+                <label class="client-detailes-sub_heading" style="width:100%;">Surname of director</label>                                
+                <input name="director_surname" type="text" value="<?php echo $detail[0]['director_surname'];?>" class="form-control height_25 plahole_font" style="width: 100%;" readonly>
+       </div>  
+
+
+
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/auditor_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/finance_tax_tab.php
+Committed revision 338.
+Updating...
+Ready
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/taxtrc_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/taxtrc_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/finance_tax_tab.php
+Committed revision 339.
+Updating...
+Ready
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_common_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_common_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/kycdirectors_content.php
+Committed revision 340.
+Updating...
+Ready
+
+
+
+
+$('#director_company_data_edit').change(function(){                    
+                        var element = $("option:selected", this);
+                        var director_surname = element.attr("data-surname"); 
+                        $("#director_surname").val(director_surname);                      
+                     
+                     });
+
+
+$('#director_company_data').change(function(){                    
+                        var element = $("option:selected", this);
+                        var director_surname = element.attr("data-surname"); 
+                        $("#director_surname").val(director_surname);                      
+                     
+                     });
+
+
+Share holder
+--------------
+
+ALTER TABLE `timesheet`.`db_director_individual_common` 
+ADD COLUMN `director_surname` VARCHAR(100) NULL AFTER `director_name`;
+
+ALTER TABLE `timesheet`.`db_shareholder_individual` 
+ADD COLUMN `surname_of_shareholder` VARCHAR(45) NULL AFTER `name_of_shareholder`;
+
+
+ALTER TABLE `timesheet`.`db_shareholder_individual` 
+ADD COLUMN `surname_of_shareholder` VARCHAR(45) NULL AFTER `name_of_shareholder`;
+
+ALTER TABLE `timesheet`.`db_beneficial_individual` 
+ADD COLUMN `owner_surname` VARCHAR(45) NULL AFTER `owner_name`;
+
+########
+
+192.168.2.10
+
+ALTER TABLE `newtimesheetqa`.`db_director_individual_common` 
+ADD COLUMN `director_surname` VARCHAR(100) NULL AFTER `director_name`;
+
+ALTER TABLE `newtimesheetqa`.`db_shareholder_individual` 
+ADD COLUMN `surname_of_shareholder` VARCHAR(100) NULL AFTER `name_of_shareholder`;
+
+
+ALTER TABLE `newtimesheetqa`.`db_beneficial_individual` 
+ADD COLUMN `owner_surname` VARCHAR(100) NULL AFTER `owner_name`;
+
+
+
+
+
+
+
+
+
+ <div class="form-group td-area-form-marg" style="margin-bottom:10px !important;">
+                                        <label class="client-detailes-sub_heading" style="width:100%;">Suriname of shareholder</label><!--
+                                        <input name="name_of_shareholder" type="text" class="form-control height_25 plahole_font" style="width: 100%;">-->
+                                    <div class="col-md-10" style="padding-left:0px;">                                   
+                                    <input name="surname_of_shareholder" id="director_surname" type="text" class="form-control height_25 plahole_font" style="width: 100%;" value="" readonly>
+                                    </div>
+                                    </div>  
+
+
+
+
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/director_tab.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+
+
+ 
+
+
+ $data['owner_surname'] = $info['director_surname'];
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Committed revision 342.
+
+
+$('#director_company_data_edit').change(function(){                    
+                        var element = $("option:selected", this);
+                        var director_surname = element.attr("data-surname"); 
+                        $("#owner_surname").val(director_surname);                      
+                     
+        });
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/beneficial_tab.php
+
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+
+
+Committed revision 343.
+Updating...
+Ready
+
+
+ALTER TABLE `newtimesheetqa`.`db_director_individual_common` 
+ADD COLUMN `director_surname` VARCHAR(100) NULL AFTER `director_name`;
+
+ALTER TABLE `newtimesheetqa`.`db_director_individual` 
+ADD COLUMN `director_surname` VARCHAR(100) NULL AFTER `director_name`;
+
+
+ALTER TABLE `newtimesheetqa`.`db_shareholder_individual` 
+ADD COLUMN `surname_of_shareholder` VARCHAR(100) NULL AFTER `name_of_shareholder`;
+
+
+ALTER TABLE `newtimesheetqa`.`db_beneficial_individual` 
+ADD COLUMN `owner_surname` VARCHAR(100) NULL AFTER `owner_name`;
+
+
+Modified: /var/www/newtimesheet/application/views/db/Director/director_common_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/director_tab.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Modified: /var/www/newtimesheet/application/views/kycdirectors_content.php
+
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_corporate_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_common_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/beneficial_tab.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Committed revision 346.
+
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/director_tab.php
+Modified: /var/www/newtimesheet/application/views/kycdirectors_content.php
+Modified: /var/www/newtimesheet/assets/css/admin/custom.css
+Committed revision 351.
+Updating...
+Ready
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/kycdirectors_content.php
+Committed revision 353.
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/licenses_tab.php
+Committed revision 354.
+Updating...
+Ready
+
+
+
+Modified: /var/www/newtimesheet/application/views/db/LicensePermit/license_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/corporate-data-tab.php
+Modified: /var/www/newtimesheet/application/views/db/licenses_tab.php
+Committed revision 355.
+
+
+accounting_done_by
+
+-------------------------
+
+
+signing_mangate
+
+ CREATE TABLE `timesheet`.`db_ba_signing_mandate` (
+  `sm_id` INT NOT NULL,
+  `bank_id` INT NOT NULL,
+  `signing_mandate` VARCHAR(100) NULL,
+  PRIMARY KEY (`sm_id`));
+
+ALTER TABLE `timesheet`.`db_ba_signing_mandate` 
+CHANGE COLUMN `sm_id` `sm_id` INT(11) NOT NULL AUTO_INCREMENT ;
+
+
+####
+CREATE TABLE `newtimesheetqa`.`db_ba_signing_mandate` (
+  `sm_id` INT NOT NULL,
+  `bank_id` INT NOT NULL,
+  `signing_mandate` VARCHAR(100) NULL,
+  PRIMARY KEY (`sm_id`));
+
+ALTER TABLE `newtimesheetqa`.`db_ba_signing_mandate` 
+CHANGE COLUMN `sm_id` `sm_id` INT(11) NOT NULL AUTO_INCREMENT ;
+
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Modified: /var/www/newtimesheet/application/views/db/BankInfo/bank_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_common_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Finance_tax_audit/account_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/bank_accounts_tab.php
+Modified: /var/www/newtimesheet/application/views/db/licenses_tab.php
+Committed revision 356.
+Updating...
+
+
+
+ALTER TABLE `timesheet`.`db_beneficial_individual` 
+ADD COLUMN `remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+
+
+#####
+
+ALTER TABLE `newtimesheetqa`.`db_beneficial_individual` 
+ADD COLUMN `remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/BankInfo/bank_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/beneficial_tab.php
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/bank_accounts_tab.php
+Committed revision 359.
+Updating...
+Ready
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/beneficial_tab.php
+Committed revision 360.
+
+
+
+
+
+CREATE TABLE `timesheet`.`db_shareholder_redemption` (
+  `redemption_id` INT NOT NULL AUTO_INCREMENT,
+  `shareholder_name` VARCHAR(100) NULL,
+  `shareholder_address` VARCHAR(255) NULL,
+  `no_of_shares` INT NULL,
+  `date_of_redemption` DATETIME NULL,
+  `type_of_share` VARCHAR(45) NULL,
+  `redemtion_remak` VARCHAR(255) NULL,
+  `client_id` VARCHAR(45) NULL,
+  PRIMARY KEY (`redemption_id`));
+
+
+ALTER TABLE `timesheet`.`db_shareholder_redemption` 
+ADD COLUMN `redemption_remark` MEDIUMTEXT NULL AFTER `date_of_redemption`;
+
+
+ALTER TABLE `timesheet`.`db_beneficial_individual` 
+ADD COLUMN `remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/config/constants.php
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Added: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_redemption_share_edit_bar.php
+Added: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_redemption_share_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Committed revision 361.
+Updating...
+Ready
+
+
+
+
+CREATE TABLE `timesheet`.`db_capital_redemption_data` (
+  `capital_redemption_id` INT NOT NULL AUTO_INCREMENT,
+  `capital_after_reduction` VARCHAR(50) NULL,
+  `date_of_capital_reduction` DATETIME NULL,
+  `stated_capital_after_reduction` VARCHAR(50) NULL,
+  `client_id` INT NOT NULL,
+  PRIMARY KEY (`capital_redemption_id`));
+
+
+    $capital_after_reduction="";
+    $date_of_capital_reduction="";
+    $stated_capital_after_reduction="";
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/models/databaseinfo_model.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Committed revision 362.
+Updating...
+Ready
+
+
+$('#capital_redemption_info').bootstrapValidator('revalidateField', 'date_of_issue');
+
+ var validator = $('#capital_redemption_info').bootstrapValidator({
+            message: 'This value is not valid',
+            fields: {
+                shareholder_name: {
+                    validators: {
+                        notEmpty: {
+                            message: 'This field is required'
+                        }
+                    }
+                }, 
+                no_of_shares: {
+                    validators: {
+                        integer: {
+                            message: 'The value should be an integer'
+                        },
+                        between: {
+                            min: 1,
+                            max: 100,
+                            message: 'Value should be in between or equal to 1 to 100'
+                        }
+                    }
+                },
+                
+            }
+        })
+        .on('success.form.bv', function(e) {
+            e.preventDefault();
+            submit_shareholder_redemption_buyback_form('add-share-holder-redemption-buyback-form', 'add', '');
+        });
+
+
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/config/constants.php
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_redemption_share_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Committed revision 363.
+Updating...
+Ready
+
+
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_allotment_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_allotment_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_redemption_share_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_redemption_share_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/director_tab.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Committed revision 364.
+Updating...
+Ready
+
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_allotment_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_allotment_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_individual_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/Shareholder/shareholder_redemption_share_grid_data.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Committed revision 365.
+Updating...
+Ready
+
+
+Execute: Commit
+Modified: /var/www/newtimesheet/application/controllers/databaseinfo.php
+Modified: /var/www/newtimesheet/application/views/db/Beneficial/bo_corporate_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_corporate_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Director/director_individual_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/LicensePermit/license_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/LicensePermit/permit_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/Trust/trust_beneficiary_edit_bar.php
+Modified: /var/www/newtimesheet/application/views/db/beneficial_tab.php
+Modified: /var/www/newtimesheet/application/views/db/director_tab.php
+Modified: /var/www/newtimesheet/application/views/db/licenses_tab.php
+Modified: /var/www/newtimesheet/application/views/db/shareholder_tab.php
+Modified: /var/www/newtimesheet/application/views/db/trusts_tab.php
+Modified: /var/www/newtimesheet/assets/js/db_ready.js
+Committed revision 366.
+Updating...
+Ready
+
+
+
+ALTER TABLE `timesheet`.`db_director_individual_common` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+ALTER TABLE `timesheet`.`db_director_individual` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+ALTER TABLE `timesheet`.`db_director_individual` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+ALTER TABLE `timesheet`.`db_shareholder_individual` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+
+####################################################
+
+ALTER TABLE `newtimesheetqa`.`db_director_individual_common` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+ALTER TABLE `newtimesheetqa`.`db_director_individual` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+
+ALTER TABLE `newtimesheetqa`.`db_shareholder_individual` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+
+ALTER TABLE `newtimesheetqa`.`db_beneficial_individual` 
+ADD COLUMN `nic_remark` MEDIUMTEXT NULL AFTER `other_detail`;
+
+
+
+update accountno query
+----------------------
+
+http://192.168.2.10/newtimesheetqa/databaseinfo/update_accountno
+
+
+
+
+
+
